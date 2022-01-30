@@ -4,7 +4,7 @@ const app = express();
 
 //displaying simple hello world
 app.get("/", (req, res) => {
-   res.send("Hello from my sample Express app");
+   res.send("Hello this is the node app to test with Docker and Jenkins.");
 });
 
 app.listen(5000, () => {

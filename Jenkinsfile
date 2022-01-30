@@ -1,7 +1,12 @@
 pipeline {
-agent { dockerfile true }
+agent  any
+// {
+//        docker {
+//            image 'node:6-alpine'
+//        }
+//    }
     stages {
-        stage('Teste') {
+        stage('Test') {
             steps {
                 // bat 'node --version'
                 echo 'Hello'

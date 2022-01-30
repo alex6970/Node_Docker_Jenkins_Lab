@@ -1,15 +1,15 @@
 pipeline {
-agent  any
+agent any
 // {
 //        docker {
 //            image 'node:6-alpine'
 //        }
 //    }
     stages {
-        stage('Test') {
+        stage('Build') {
             steps {
-                // bat 'node --version'
-                echo 'Hello'
+                bat 'docker-compose up'
+                // echo 'Hello'
             }
         }
     }
